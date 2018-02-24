@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android ="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.courtcounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="3dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/teamName1"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        android:textColor="#616161"
+        android:fontFamily="sans-serif-medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="@string/pointsTitel"
+            android:textSize="28sp"
+            android:layout_gravity="center"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:fontFamily="sans-serif-light" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="46sp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:id="@+id/team_a_score"
+            android:fontFamily="sans-serif-light" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="@string/gamesTitel"
+                android:textSize="28sp"
+                android:textAlignment="viewStart"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="46sp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:id="@+id/team_a_score2"
+                android:fontFamily="sans-serif-light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="@string/setsTitel"
+                android:textSize="28sp"
+                android:textAlignment="viewStart"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="46sp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:id="@+id/team_a_score3"
+                android:fontFamily="sans-serif-light" />
+
+        </LinearLayout>
+
+    <Button
+        android:text="@string/onePointButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="plusOneA"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:id="@+id/pointTeamA" />
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/teamName2"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="#616161"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/pointsTitel"
+                android:textSize="28sp"
+                android:layout_gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="46sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/gamesTitel"
+                android:textSize="28sp"
+                android:textAlignment="viewStart"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="46sp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:id="@+id/team_b_score2"
+                android:fontFamily="sans-serif-light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/setsTitel"
+                android:textSize="28sp"
+                android:textAlignment="viewStart"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="46sp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:id="@+id/team_b_score3"
+                android:fontFamily="sans-serif-light" />
+
+        </LinearLayout>
+
+        <Button
+            android:text="@string/onePointButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="24dp"
+            android:layout_marginLeft="24dp"
+            android:onClick="plusOneB"
+            android:id="@+id/pointTeamB" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.5">
+
+</LinearLayout>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="0.5">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/tennisball"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="6dp"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:id="@+id/winnerName"
+        android:visibility="invisible"/>
+    
+</LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/resetButton"
+        android:onClick="Reset"
+        android:layout_marginBottom="32dp" />
+
+</LinearLayout>
